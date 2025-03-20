@@ -117,28 +117,7 @@ def processCommand(c):
             speak(f"An error occurred: {str(e)}")
 
 
-    # elif 'activate chatbot' in c.lower():
-    #     speak('Chatbot is activated. Say "deactivate chatbot" to exit.')
 
-    #     # Chatbot mode loop
-    #     while True:
-    #         try:
-    #             with sr.Microphone() as source:
-    #                 print("Chatbot Active. Listening...")
-    #                 audio = recognizer.listen(source)
-    #                 user_input = recognizer.recognize_google(audio)
-
-    #                 if 'deactivate chatbot' in user_input.lower():
-    #                     speak("Chatbot deactivated.")
-    #                     break
-
-    #                 response = botlibre_chat(user_input)
-    #                 print("Chatbot:", response)
-    #                 speak(response)
-
-    #         except Exception as e:
-    #             print("Error:", e)
-    #             speak("An error occurred while processing your request.")
 
     elif c.lower().endswith('detail'):
         word = c.lower().split(' ')[0]
